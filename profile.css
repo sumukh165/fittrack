@@ -1,0 +1,176 @@
+/* Reset default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/195/334/desktop-wallpaper-black-granite-backgrounds-texture.jpg'); /* Add the correct path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #F42C04; /* Updated color */
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header nav ul li {
+    display: inline;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s, background-color 0.3s, transform 0.3s;
+    background-color: #222; /* Add background color for box effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow for box effect */
+}
+
+
+.header nav ul li a {
+    color: #F42C04; /* Updated color */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.header nav ul li:hover {
+    border-color: #F42C04; /* Updated color */
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+.header nav ul li a:hover {
+    color: #fff; /* Updated color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust based on header and footer height */
+}
+
+.login-box {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    text-align: center;
+    width: calc(100% - 384px); /* 2 inches gap on both sides */
+    max-width: 600px; /* Ensures the width doesn't go too wide on large screens */
+    box-sizing: border-box;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #F42C04; /* Updated color */
+}
+
+.textbox {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textbox label {
+    width: 30%;
+    text-align: left;
+    color: #999; /* Updated color */
+}
+
+.textbox input, .textbox select {
+    width: 65%;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #555;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.textbox input:hover, .textbox select:hover {
+    border-color: #F42C04; /* Updated color */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(244, 44, 4, 0.7); /* Add a slight shadow */
+}
+
+.btn {
+    width: 100%;
+    background: #F42C04; /* Updated color */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #555; /* Updated color */
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #111;
+    text-align: center;
+    border-top: 2px solid #444;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer table {
+    width: 100%;
+    margin: 0;
+}
+
+.footer h4 {
+    margin: 0;
+    color: #F42C04; /* Updated color */
+}
+
+.footer a {
+    color: #F42C04; /* Updated color */
+    text-decoration: none;
+    transition: transform 0.3s; /* Added transform transition */
+}
+
+.footer a:hover {
+    color: #fff;
+    transform: scale(1.3); /* Added transform effect */
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
