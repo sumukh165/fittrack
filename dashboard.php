@@ -3,7 +3,7 @@ session_start();
 include 'db.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -68,7 +68,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - FitTrack</title>
     <style>
-        <?php include 'dashboard.css'; ?>
+        <?php include 'styles/dashboard.css'; ?>
     </style>
 </head>
 <body>

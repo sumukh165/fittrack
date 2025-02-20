@@ -53,7 +53,7 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition - FitTrack</title>
-    <link rel="stylesheet" href="nutrition.css">
+    <link rel="stylesheet" href="styles/nutrition.css">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const foodData = <?php echo json_encode($foods); ?>;

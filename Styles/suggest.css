@@ -10,6 +10,7 @@ body {
     color: #fff;
 }
 
+/* General styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
@@ -27,7 +28,7 @@ body {
     margin: 0;
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #F42C04; /* Updated color */
+    color: #F42C04; /* Updated color to match the theme */
 }
 
 .header nav ul {
@@ -48,7 +49,6 @@ body {
     background-color: #222; /* Add background color for box effect */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow for box effect */
 }
-
 
 .header nav ul li a {
     color: #F42C04; /* Updated color */
@@ -74,9 +74,10 @@ body {
     align-items: center;
     min-height: calc(100vh - 120px); /* Adjust based on header and footer height */
     padding: 20px;
-    max-width: 5000px; /* Adjust the container width */
+    max-width: 1200px; /* Adjust the container width */
     margin: 0 auto;
     box-sizing: border-box;
+    gap: 20px; /* Adds space between items */
 }
 
 .list-container {
@@ -87,24 +88,20 @@ body {
     margin-bottom: 20px;
     width: 100%;
     box-sizing: border-box;
-    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effect */
-}
-
-.list-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 0 #F42C04; /* Hover effect */
 }
 
 .list-container h3 {
     margin: 0 0 10px;
     font-size: 1.25rem;
-    color: #F42C04; /* Updated color */
+    color: #fff; /* Updated color to match the theme */
+    line-height: 1.5; /* Improved line spacing */
 }
 
 .list-container p {
     margin: 10px 0;
     font-size: 1rem;
     color: #fff;
+    line-height: 1.5; /* Improved line spacing */
 }
 
 .login-box {
@@ -121,6 +118,8 @@ body {
 .login-box h2 {
     margin-bottom: 30px;
     font-size: 1.5rem;
+    color: #fff; /* Updated color to match the theme */
+    line-height: 1.5; /* Improved line spacing */
 }
 
 .textbox {
@@ -137,7 +136,9 @@ body {
     font-size: 18px;
     border-radius: 5px;
     box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .textbox input:hover, .textbox select:hover {
     border-color: #F42C04; /* Updated color */
     transform: scale(1.05);
@@ -176,7 +177,8 @@ body {
 
 .footer h4 {
     margin: 0;
-    color: #F42C04; /* Updated color */
+    color: #fff; /* Updated color to match the theme */
+    line-height: 1.5; /* Improved line spacing */
 }
 
 .footer a {
@@ -193,7 +195,9 @@ body {
 .error {
     color: red;
     margin-top: 10px;
+    line-height: 1.5; /* Improved line spacing */
 }
+
 /* Style for the diet plan list items */
 ul.diet-plan {
     list-style-type: none;
@@ -205,6 +209,7 @@ ul.diet-plan li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+    line-height: 1.5; /* Improved line spacing */
 }
 
 /* Style for the workout plan list items */
@@ -218,6 +223,7 @@ ul.workout-plan li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+    line-height: 1.5; /* Improved line spacing */
 }
 
 /* Example additional styling */
@@ -226,9 +232,9 @@ ul.workout-plan li {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 5px;
+    line-height: 1.5; /* Improved line spacing */
 }
 
 .login-box ul li:nth-child(odd) {
     background-color: #222;
 }
-

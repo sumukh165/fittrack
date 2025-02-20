@@ -4,7 +4,7 @@ require 'db.php'; // Ensure this file contains the correct database connection c
 
 if (!isset($_SESSION['user_id'])) {
     // Redirect to login page if the user is not logged in
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -311,7 +311,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Plan - FitTrack</title>
-    <link rel="stylesheet" href="suggest.css">
+    <link rel="stylesheet" href="styles/suggest.css">
 </head>
 <body>
     <div class="header">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2024 at 03:57 PM
+-- Generation Time: Jul 14, 2024 at 11:49 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -104,7 +104,9 @@ INSERT INTO `foods` (`id`, `food_name`, `calories`, `protein`, `carbs`, `fats`) 
 (71, 'Mutton Sukka', 300, 22, 5, 20),
 (72, 'Rasam', 50, 2, 8, 1),
 (73, 'Semiya Upma', 200, 5, 35, 5),
-(74, 'Puliyogare', 170, 4, 30, 4);
+(74, 'Puliyogare', 170, 4, 30, 4),
+(75, 'Paneer wrap', 400, 20, 40, 30),
+(76, 'Egg roll', 300, 20, 20, 20);
 
 -- --------------------------------------------------------
 
@@ -154,7 +156,8 @@ CREATE TABLE `personal_details` (
 
 INSERT INTO `personal_details` (`id`, `user_id`, `height`, `weight`, `age`, `gender`) VALUES
 (1, 1, 165, 80, 20, 'Male'),
-(2, 2, 170, 70, 20, 'Male');
+(2, 2, 170, 70, 20, 'Male'),
+(3, 3, 165, 80, 20, 'Male');
 
 -- --------------------------------------------------------
 
@@ -176,8 +179,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `password`, `goal`) VALUES
-(1, 'Sumukh', 'email@gmail.com', '123abc', '$2y$10$WsJlAxdmtV95urD5ZMcSeuL.bsbAZ93oTYYHaggFNzSWwl5nqkSyy', 'maintenance'),
-(2, 'admin', 'admin@email.com', 'admin', '$2y$10$50qhB9Gi6BhWD4akjxHQC.hdeeGpi54qplqnar76JR5p0N.Ox/ira', 'maintenance');
+(1, 'Sumukh', 'email@gmail.com', '123abc', '$2y$10$WsJlAxdmtV95urD5ZMcSeuL.bsbAZ93oTYYHaggFNzSWwl5nqkSyy', 'muscle_gain'),
+(2, 'admin', 'admin@email.com', 'admin', '$2y$10$50qhB9Gi6BhWD4akjxHQC.hdeeGpi54qplqnar76JR5p0N.Ox/ira', 'maintenance'),
+(3, 'Sumukh', 'sumukhks16504@gmail.com', 'sumukh', '$2y$10$AwfV0MiUEPqrBmU9.8z1j.5fTRuNxWqdJzkR1oaVYXPtj28Nq7UXK', 'muscle_gain');
 
 -- --------------------------------------------------------
 
@@ -254,25 +258,25 @@ ALTER TABLE `workouts`
 -- AUTO_INCREMENT for table `foods`
 --
 ALTER TABLE `foods`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `nutrition`
 --
 ALTER TABLE `nutrition`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `personal_details`
 --
 ALTER TABLE `personal_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `workouts`

@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($conn->query($sql) === TRUE) {
             echo "Account created successfully";
-            header('Location: login.php');
+            header('Location: dashboard.php');
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="styles/register.css">
 </head>
 <body>
     <div class="header">
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <button type="submit" name="Register" class="btn">Sign Up</button>
                 <div class="links">
-                    <span>Already a User? <a href="login.php">Login</a></span>
+                    <span>Already a User? <a href="index.php">Login</a></span>
                 </div>
             </form>
         </div>

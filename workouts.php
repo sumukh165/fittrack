@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workouts - FitTrack</title>
-    <link rel="stylesheet" href="workouts.css">
+    <link rel="stylesheet" href="styles/workouts.css">
     <script>
         // Function to set default current date for workout_date field
         function setDefaultDate() {
